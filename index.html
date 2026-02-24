@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Car Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header>
+  <div class="hamburger" id="openSidebar">☰</div>
+  <h1 id="sectionTitle">Your Images</h1>
+</header>
+
+<!-- ===== Sidebar ===== -->
+<div class="overlay" id="overlay"></div>
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <h2>Menu</h2>
+    <span id="closeSidebar">✖</span>
+  </div>
+
+  <button data-section="dashboard">Your Images</button>
+  <button data-section="favourites">Favourites</button>
+  <button data-section="downloads">Downloads</button>
+  <button data-section="deleted">Deleted</button>
+</aside>
+
+<!-- ===== Upload Area ===== -->
+<section class="upload-container" id="uploadSection">
+  <div class="upload-box">
+    <p>Drag & Drop or Click to Upload (Max 5)</p>
+    <div class="preview-container"></div>
+  </div>
+
+  <div class="upload-controls">
+    <button id="addBtn">Add Image</button>
+    <button id="resetPreviewBtn">Reset</button>
+  </div>
+
+  <input type="file" id="fileInput" multiple accept="image/*">
+  <span id="counter">12 images loaded</span>
+</section>
+
+<!-- ===== Section Actions ===== -->
+<div id="sectionActions"></div>
+
+<!-- ===== Gallery ===== -->
+<main id="gallery" class="gallery"></main>
+
+<script src="script.js"></script>
+</body>
+</html>
