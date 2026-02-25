@@ -33,4 +33,4 @@ An interactive car gallery web app with features like drag & drop upload, image 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/car-gallery.git
+git clone (https://github.com/amitvishwakarma8881/Car_Gallery.git)
